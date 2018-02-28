@@ -17,8 +17,20 @@
     <input type="text" name="firstname"/>
     <input type="text" name="firstname"/>
     <input type="number" name="firstname"/>
+    <input type="submit" value="send"/>
     </form>
+
+
     <?php 
+
+if($_SERVER['REQUEST_METHOD'] == "POST")
+{
+    $person = new Person($_POST['firstname'], $_POST['lastname'], $_POST['number']);
+    $person->writePerson();
+
+    //här måste person sparas i en cookie på något vis. 
+}
+
     $jenny = new Person('Jenny', 'Jäderborn', '986');
     $jenny->writePerson();
 
