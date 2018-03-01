@@ -1,4 +1,30 @@
-<?php include "classes.php";
+
+
+
+<?php
+
+if(isset($_COOKIE["user"])){
+    echo"cookie is set<br/>";
+    header('location:myhoroscope.php');
+}
+
+if($_SERVER['REQUEST_METHOD'] == "POST")
+{
+
+    $user = array($_POST['firstname'], $_POST['lastname'], $_POST['number']);
+    print_r($user);
+
+    if(!isset($_COOKIE["user"]))
+    {
+        setcookie("user", serialize($user), time()+3600);
+        echo "cookie is not set";
+        header('location:myhoroscope.php');
+
+    }
+
+}
+
+include "classes.php";
 
 ?>
 
@@ -15,24 +41,17 @@
 
     <form method="POST">
     <input type="text" name="firstname"/>
-    <input type="text" name="firstname"/>
-    <input type="number" name="firstname"/>
+    <input type="text" name="lastname"/>
+    <input type="number" name="number"/>
     <input type="submit" value="send"/>
     </form>
 
 
     <?php 
 
-if($_SERVER['REQUEST_METHOD'] == "POST")
-{
-    $person = new Person($_POST['firstname'], $_POST['lastname'], $_POST['number']);
-    $person->writePerson();
 
-    //här måste person sparas i en cookie på något vis. 
-}
-
-    $jenny = new Person('Jenny', 'Jäderborn', '986');
-    $jenny->writePerson();
+    //$jenny = new Person('Jenny', 'Jäderborn', '986');
+    //$jenny->writePerson();
 
     
     ?>
