@@ -19,40 +19,40 @@ public function checkHoroscope() {
     $persnr = $this->number;
 
     $vädur = "<div class='card'><h1>Väduren</h1><p>Varm, entusiastisk, social, känslosam, stressad, impulsstyrd, aggressiv.<br/>
-    Element: Eld</p><br/><img style='width: 200px;'src='vadur.jpg'></div>";
+    Element: Eld</p><br/><img style='width: 200px;'src='./images/vadur.jpg'></div>";
 
     $fisk = "<div class='card'><h1>Fiskarna</h1><p>Empati, human, slarvig, vänlig, hemlighetsfull, lättpåverkad, inspirerande<br/>
-    Element: Vatten</p><br/><img style='width: 200px;'src='fisk.jpg'></div>";
+    Element: Vatten</p><br/><img style='width: 200px;'src='./images/fisk.jpg'></div>";
 
     $oxen = "<div class='card'><h1>Oxen</h1><p>Envis, beskyddande, lojal, tålmodig, uthållig, stabil, praktisk, realistisk<br/>
-    Element:jord</p><br/><img style='width: 200px;'src='oxe.png'></div>";
+    Element:jord</p><br/><img style='width: 200px;'src='./images/oxe.png'></div>";
 
     $tvilling = "<div class='card'><h1>Tvillingarna</h1><p>Kvick, kommunikativ, ytlig, nyfiken, självständig, modig, impulsiv, stressad<br/>
-    Element: luft</p><br/><img style='width: 200px;'src='tvilling.jpg'></div>";
+    Element: luft</p><br/><img style='width: 200px;'src='./images/tvilling.jpg'></div>";
 
     $kräfta = "<div class='card'><h1>Kräftan</h1><p>Föräldern, beskyddaren, bevararen, den trofaste, den lojale & sympatiske<br/>
-    Element: vatten</p><br/><img style='width: 200px;'src='krafta.jpg'></div>";
+    Element: vatten</p><br/><img style='width: 200px;'src='./images/krafta.jpg'></div>";
 
     $lejon = "<div class='card'><h1>Lejonet</h1><p>Storsint, kärleksfull, viljestark, svarsjuk, ledare, trofast, plikttrogen<br/>
-    Element: solen</p><br/><img style='width: 200px;'src='lejon.jpeg'></div>";
+    Element: solen</p><br/><img style='width: 200px;'src='./images/lejon.jpeg'></div>";
 
     $jungfru = "<div class='card'><h1>Jungfrun</h1><p>Blyg, självmedveten, analytisk, produktiv, kritisk, föränderlig <br/>
-    Element: jord</p><br/><img style='width: 200px;'src='jungfru.jpg'></div>";
+    Element: jord</p><br/><img style='width: 200px;'src='./images/jungfru.jpg'></div>";
 
     $våg = "<div class='card'><h1>Vågen</h1><p>Förälskelse, charm, obeslutsamhet, förföriskhet, diplomati, social kompetens <br/>
-    Element: luft</p><br/><img style='width: 200px;'src='vag.jpg'></div>";
+    Element: luft</p><br/><img style='width: 200px;'src='./images/vag.jpg'></div>";
 
     $skorpion = "<div class='card'><h1>Skorpionen</h1><p>Intensiv, svarsjuk, passionerad, tystlåten, intensiv, lojal, modig, stark<br/>
-    Element: vatten</p><br/><img style='width: 200px;'src='skorpion.jpg'></div>";
+    Element: vatten</p><br/><img style='width: 200px;'src='./images/skorpion.jpg'></div>";
 
     $skytt = "<div class='card'><h1>Skytten</h1><p>Ärlig, generös, idealistisk, optimistisk, överdrivande, entusiastisk, sökare<br/>
-    Element: eld</p><br/><img style='width: 200px;'src='skytt.png'></div>";
+    Element: eld</p><br/><img style='width: 200px;'src='./images/skytt.png'></div>";
 
     $stenbock = "<div class='card'><h1>Stenbocken</h1><p>Tillbakadragen, blyg, trogen, pliktkänsla, ambitiös, lojal <br/>
-    Element: jord</p><br/><img style='width: 200px;'src='stenbock.jpg'></div>";
+    Element: jord</p><br/><img style='width: 200px;'src='./images/stenbock.jpg'></div>";
 
     $vattuman = "<div class='card'><h1>Vattumannen</h1><p>Fredsälskare, klarsynt, intuitiv, lojal, uppfinningsrik, revolutionär<br/>
-    Element: vatten</p><br/><img style='width: 200px;'src='vattuman.png'></div>";
+    Element: vatten</p><br/><img style='width: 200px;'src='./images/vattuman.png'></div>";
 
 
 
