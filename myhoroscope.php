@@ -1,4 +1,5 @@
 <?php
+include 'header.php';
 include 'classes.php';
 
 //print_r($_COOKIE);

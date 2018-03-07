@@ -1,7 +1,9 @@
 
 
-
 <?php
+
+include 'header.php';
+include 'footer.php';
 
 if(isset($_COOKIE["user"])){
     echo"cookie is set<br/>";
@@ -37,12 +39,12 @@ include "classes.php";
     <title>Document</title>
 </head>
 <body>
-    hejsan
-
+    
     <form method="POST">
-    <input type="text" name="firstname"/>
-    <input type="text" name="lastname"/>
-    <input type="number" name="number"/>
+    <h2>Fyll i för att se ditt stjärntecken</h2>
+    <input type="text" placeholder="Förnamn" name="firstname"/>
+    <input type="text" placeholder="Efternamn" name="lastname"/>
+    <input type="number" placeholder="YYMMDD" name="number"/>
     <input type="submit" value="send"/>
     </form>
 

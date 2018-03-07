@@ -10,50 +10,68 @@ function __construct($firstname, $lastname, $number) {
     }
 
     public function writePerson() {
-        echo "Välkommen $this->firstname $this->lastname $this->number <br/>";
+        echo "<h2>Välkommen $this->firstname! Här är ditt stjärntecken:</h2>";
 
 }
 
 public function checkHoroscope() {
 
-    
-
-        /*'oxenFM' => 4,
-        'oxenLM' => 5,
-        'oxenFD' => 20,
-        'oxenLD' => 20,
-        'tvilingFM' => 5,
-        'tvilingLM' => 6,
-        'tvilingFD' => 21,
-        'tvilingLD' => 21,
-        'kräftaFM' => 6,
-        'kräftaLM' => 7,
-        'kräftaFD' => 22,
-        'kräftaLD' => 22,
-        'lejonFM' => 7,
-        'lejonLM' => 8,
-        'lejonFD' => 23,
-        'lejonLD' => 22*/
-   
-
     $persnr = $this->number;
+
+    $vädur = "<div class='card'><h1>Väduren</h1><p>Varm, entusiastisk, social, känslosam, stressad, impulsstyrd, aggressiv.<br/>
+    Element: Eld</p><br/><img style='width: 200px;'src='vadur.jpg'></div>";
+
+    $fisk = "<div class='card'><h1>Fiskarna</h1><p>Empati, human, slarvig, vänlig, hemlighetsfull, lättpåverkad, inspirerande<br/>
+    Element: Vatten</p><br/><img style='width: 200px;'src='fisk.jpg'></div>";
+
+    $oxen = "<div class='card'><h1>Oxen</h1><p>Envis, beskyddande, lojal, tålmodig, uthållig, stabil, praktisk, realistisk<br/>
+    Element:jord</p><br/><img style='width: 200px;'src='oxe.png'></div>";
+
+    $tvilling = "<div class='card'><h1>Tvillingarna</h1><p>Kvick, kommunikativ, ytlig, nyfiken, självständig, modig, impulsiv, stressad<br/>
+    Element: luft</p><br/><img style='width: 200px;'src='tvilling.jpg'></div>";
+
+    $kräfta = "<div class='card'><h1>Kräftan</h1><p>Föräldern, beskyddaren, bevararen, den trofaste, den lojale & sympatiske<br/>
+    Element: vatten</p><br/><img style='width: 200px;'src='krafta.jpg'></div>";
+
+    $lejon = "<div class='card'><h1>Lejonet</h1><p>Storsint, kärleksfull, viljestark, svarsjuk, ledare, trofast, plikttrogen<br/>
+    Element: solen</p><br/><img style='width: 200px;'src='lejon.jpeg'></div>";
+
+    $jungfru = "<div class='card'><h1>Jungfrun</h1><p>Blyg, självmedveten, analytisk, produktiv, kritisk, föränderlig <br/>
+    Element: jord</p><br/><img style='width: 200px;'src='jungfru.jpg'></div>";
+
+    $våg = "<div class='card'><h1>Vågen</h1><p>Förälskelse, charm, obeslutsamhet, förföriskhet, diplomati, social kompetens <br/>
+    Element: luft</p><br/><img style='width: 200px;'src='vag.jpg'></div>";
+
+    $skorpion = "<div class='card'><h1>Skorpionen</h1><p>Intensiv, svarsjuk, passionerad, tystlåten, intensiv, lojal, modig, stark<br/>
+    Element: vatten</p><br/><img style='width: 200px;'src='skorpion.jpg'></div>";
+
+    $skytt = "<div class='card'><h1>Skytten</h1><p>Ärlig, generös, idealistisk, optimistisk, överdrivande, entusiastisk, sökare<br/>
+    Element: eld</p><br/><img style='width: 200px;'src='skytt.png'></div>";
+
+    $stenbock = "<div class='card'><h1>Stenbocken</h1><p>Tillbakadragen, blyg, trogen, pliktkänsla, ambitiös, lojal <br/>
+    Element: jord</p><br/><img style='width: 200px;'src='stenbock.jpg'></div>";
+
+    $vattuman = "<div class='card'><h1>Vattumannen</h1><p>Fredsälskare, klarsynt, intuitiv, lojal, uppfinningsrik, revolutionär<br/>
+    Element: vatten</p><br/><img style='width: 200px;'src='vattuman.png'></div>";
+
+
 
 //mars månad
      if($persnr[2] . $persnr[3] == 03){
         if($persnr[4] . $persnr[5] >= 21){
-            echo "du är en vädur";
+            echo $vädur;
         }
         else if($persnr[4] . $persnr[5] < 21){
-            echo "du är en fisk";
+            echo $fisk;
         }
     }
 //april månad
     if($persnr[2] . $persnr[3] == 04){
         if($persnr[4] . $persnr[5] <= 19){
-            echo "du är en vädur";
+            echo $vädur;
         }
         else if($persnr[4] . $persnr[5] >= 20){
-            echo "du är en Oxe";
+            echo $oxen;
         }
     }
 
@@ -61,20 +79,20 @@ public function checkHoroscope() {
 
         if($persnr[2] . $persnr[3] == 05){
             if($persnr[4] . $persnr[5] <= 20){
-                echo "du är en Oxe";
+                echo $oxen;
             }
             else if($persnr[4] . $persnr[5] >= 21){
-                echo "du är en tvilling";
+                echo $tvilling;
             }
         }
 
  //juni månad
         if($persnr[2] . $persnr[3] == 06){
             if($persnr[4] . $persnr[5] <= 21){
-                echo "du är en tvilling";
+                echo $tvilling;   
             }
             else if($persnr[4] . $persnr[5] >= 22){
-                echo "du är en kräfta";
+                echo $kräfta;
             }
         }
 
@@ -82,10 +100,10 @@ public function checkHoroscope() {
 
     if($persnr[2] . $persnr[3] == 07){
         if($persnr[4] . $persnr[5] <= 22){
-            echo "du är en kräfta";
+            echo $kräfta;
         }
         else if($persnr[4] . $persnr[5] >= 23){
-            echo "du är ett lejon";
+            echo $lejon;
         }
     }
 
@@ -93,10 +111,10 @@ public function checkHoroscope() {
 
             if($persnr[2] . $persnr[3] == "08"){
                 if($persnr[4] . $persnr[5] <= 22){
-                    echo "du är ett lejon";
+                    echo $lejon;
                 }
                 else if($persnr[4] . $persnr[5] >= 23){
-                    echo "du är en jungfru";
+                    echo $jungfru;
                 }
             }
 
@@ -105,10 +123,10 @@ public function checkHoroscope() {
 
         if($persnr[2] . $persnr[3] == "09"){
             if($persnr[4] . $persnr[5] <= 22){
-                echo "du är en jungfru";
+                echo $jungfru;
             }
             else if($persnr[4] . $persnr[5] >= 23){
-                echo "du är en våg";
+                echo $våg;
             }
         }
 
@@ -116,10 +134,10 @@ public function checkHoroscope() {
 
         if($persnr[2] . $persnr[3] == 10){
             if($persnr[4] . $persnr[5] <= 22){
-                echo "du är en våg";
+                echo $våg;
             }
             else if($persnr[4] . $persnr[5] >= 23){
-                echo "du är en skorpion";
+                echo $skorpion;
             }
         }
 
@@ -127,10 +145,10 @@ public function checkHoroscope() {
 
         if($persnr[2] . $persnr[3] == 11){
             if($persnr[4] . $persnr[5] <= 21){
-                echo "du är en skorpion";
+                echo $skorpion;
             }
             else if($persnr[4] . $persnr[5] >= 22){
-                echo "du är en skytt";
+                echo $skytt;
             }
         }
 
@@ -138,10 +156,10 @@ public function checkHoroscope() {
 
         if($persnr[2] . $persnr[3] == 12){
             if($persnr[4] . $persnr[5] <= 21){
-                echo "du är en skytt";
+                echo $skytt;
             }
             else if($persnr[4] . $persnr[5] >= 22){
-                echo "du är en stenbock";
+                echo $stenbock;
             }
         }
 
@@ -149,10 +167,10 @@ public function checkHoroscope() {
 
         if($persnr[2] . $persnr[3] == 01){
             if($persnr[4] . $persnr[5] <= 19){
-                echo "du är en Stenbock";
+                echo $stenbock;
             }
             else if($persnr[4] . $persnr[5] >= 20){
-                echo "du är en vattuman";
+                echo $vattuman;
             }
         }
 
@@ -160,10 +178,10 @@ public function checkHoroscope() {
 
         if($persnr[2] . $persnr[3] == 02){
             if($persnr[4] . $persnr[5] <= 18){
-                echo "du är en vattuman";
+                echo $vattuman;
             }
             else if($persnr[4] . $persnr[5] >= 19){
-                echo "du är en fisk";
+                echo $fisk;
             }
         }
                 
@@ -193,4 +211,21 @@ else $month == $horosc -> lastmonth
 and $day <= $horosc -> lastday 
 */
 
+        /*'oxenFM' => 4,
+        'oxenLM' => 5,
+        'oxenFD' => 20,
+        'oxenLD' => 20,
+        'tvilingFM' => 5,
+        'tvilingLM' => 6,
+        'tvilingFD' => 21,
+        'tvilingLD' => 21,
+        'kräftaFM' => 6,
+        'kräftaLM' => 7,
+        'kräftaFD' => 22,
+        'kräftaLD' => 22,
+        'lejonFM' => 7,
+        'lejonLM' => 8,
+        'lejonFD' => 23,
+        'lejonLD' => 22*/
+   
 
